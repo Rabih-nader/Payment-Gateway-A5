@@ -3,7 +3,7 @@ const paypal = require("@paypal/checkout-server-sdk");
 const mongoose = require("mongoose");
 
 // Connect to MongoDB Atlas
-mongoose.connect("mongodb+srv://user2:EPrhlETms5CHgJUV@cluster0.24jxwho.mongodb.net/test",
+mongoose.connect("mongodb+srv://user3:4c53l8QDFPEztnO6@cluster0.24jxwho.mongodb.net/PaymentGateway",
  { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("Connected to MongoDB Atlas"))
   .catch((err) => console.error("Error connecting to MongoDB Atlas", err));
