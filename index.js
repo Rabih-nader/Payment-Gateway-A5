@@ -3,7 +3,7 @@ const paypal = require("@paypal/checkout-server-sdk");
 const mongoose = require("mongoose");
 
 // Connect to MongoDB Atlas
-mongoose.connect("mongodb+srv://user1:YXXaYe3CT0gjgnT3@Cluster0.mongodb.net/PaymentGateway",
+mongoose.connect("mongodb+srv://user2:EPrhlETms5CHgJUV@cluster0.24jxwho.mongodb.net/test",
  { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("Connected to MongoDB Atlas"))
   .catch((err) => console.error("Error connecting to MongoDB Atlas", err));
@@ -29,7 +29,7 @@ app.post("/pay", async (req, res) => {
       {
         amount: {
           currency_code: "USD",
-          value: "2.00",
+          value: "5.00",
         },
       },
     ],
