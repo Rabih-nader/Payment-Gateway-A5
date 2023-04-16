@@ -1,0 +1,19 @@
+{
+  "name": "paypalnode.js-master",
+  "version": "1.0.0",
+  "description": "Paypal node app in express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Shivali Dhaka",
+  "license": "ISC",
+  "dependencies": {
+    "@paypal/checkout-server-sdk": "^1.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.3",
+    "nodemon": "^2.0.20",
+    "paypal-rest-sdk": "^1.8.1"
+  }
+}
